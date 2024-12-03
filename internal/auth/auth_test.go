@@ -48,7 +48,7 @@ func TestGetCorrectAuthKey(t *testing.T) {
 		t.Fatalf("Unexpected error, got %q", err.Error())
 	}
 
-	if key != "asdfasdfx" {
+	if key != "asdfasdf" {
 		t.Fatalf("Expected key to be %q got %q", "asdfasdf", key)
 	}
 }
