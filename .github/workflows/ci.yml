@@ -24,6 +24,9 @@ jobs:
       - name: Run Go version
         run: go test ./... -cover
 
+      - name: Run Go sec
+        run: gosec ./... -cover
+
   style:
     name: Style
     runs-on: ubuntu-latest
