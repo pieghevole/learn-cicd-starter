@@ -20,3 +20,6 @@ jobs:
 
       - name: Run Go version
         run: go test ./... -cover
+
+      - name: Run Go fmt
+        run: test -z $(go fmt ./...)
